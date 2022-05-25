@@ -17,7 +17,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "dev.franckyi.mcfx.fabric.MCFXModFabric"
+      {
+        "adapter": "kotlin",
+        "value": "dev.franckyi.mcfx.fabric.MCFXModFabric"
+      }
     ]
   },
   "mixins": [
@@ -27,7 +30,8 @@
   "depends": {
     "fabric": "*",
     "minecraft": ">=1.18.2",
-    "architectury": ">=4.4.59"
+    "architectury": ">=4.4.59",
+    "fabric-language-kotlin": ">=1.7.4+kotlin.1.6.21"
   },
   "custom": {
     "modmenu": {

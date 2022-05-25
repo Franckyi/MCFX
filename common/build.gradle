@@ -12,6 +12,13 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
     // Remove the next line if you don't want to depend on the API
     modApi "dev.architectury:architectury:${rootProject.architectury_version}"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${rootProject.kotlin_version}"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:${rootProject.kotlin_version}"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:${rootProject.kotlinx_coroutines_version}"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:${rootProject.kotlinx_coroutines_version}"
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:${rootProject.kotlinx_serialization_version}"
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:${rootProject.kotlinx_serialization_version}"
 }
 
 publishing {

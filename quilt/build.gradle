@@ -33,8 +33,10 @@ dependencies {
         exclude group: "net.fabricmc"
         exclude group: "net.fabricmc.fabric-api"
     }
+    modImplementation("net.fabricmc:fabric-language-kotlin:${rootProject.fabric_language_kotlin_version}") {
+        exclude group: "net.fabricmc"
+    }
     modImplementation("com.terraformersmc:modmenu:3.2.2") {
-        // We must not pull Fabric Loader from Architectury Fabric
         exclude group: "net.fabricmc"
         exclude group: "net.fabricmc.fabric-api"
     }

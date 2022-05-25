@@ -1,6 +1,6 @@
-modLoader = "javafml"
-loaderVersion = "[40,)"
-issueTrackerURL = ""
+modLoader = "kotlinforforge"
+loaderVersion = "[3,)"
+issueTrackerURL = "https://github.com/Franckyi/MCFX/issues"
 license = "MIT"
 
 [[mods]]
@@ -11,7 +11,7 @@ authors = "Franckyi"
 description = '''
 A client-side GUI API inspired by TornadoFX
 '''
-logoFile = "assets/mcfx/icon.png"
+logoFile = "icon.png"
 
 [[dependencies.mcfx]]
 modId = "forge"

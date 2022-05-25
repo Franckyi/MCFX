@@ -2,6 +2,10 @@ plugins {
     id "com.github.johnrengelman.shadow" version "7.1.2"
 }
 
+repositories {
+    maven { url "https://thedarkcolour.github.io/KotlinForForge/" }
+}
+
 architectury {
     platformSetupLoomIde()
     forge()
@@ -28,6 +32,9 @@ dependencies {
     forge "net.minecraftforge:forge:${rootProject.forge_version}"
     // Remove the next line if you don't want to depend on the API
     modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}"
+    implementation "thedarkcolour:kotlinforforge:${rootProject.kff_version}"
+    forgeRuntimeLibrary "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${rootProject.kotlin_version}"
+    forgeRuntimeLibrary "org.jetbrains.kotlin:kotlin-reflect:${rootProject.kotlin_version}"
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }

@@ -22,7 +22,10 @@
     "environment": "*",
     "entrypoints": {
       "init": [
-        "dev.franckyi.mcfx.quilt.MCFXModQuilt"
+        {
+          "adapter": "kotlin",
+          "value": "dev.franckyi.mcfx.quilt.MCFXModQuilt"
+        }
       ]
     },
     "depends": [
@@ -41,6 +44,10 @@
       {
         "id": "architectury",
         "version": ">=4.4.59"
+      },
+      {
+        "id": "fabric-language-kotlin",
+        "version": ">=1.7.4+kotlin.1.6.21"
       }
     ]
   }
