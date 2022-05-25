@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "mcfx"
+version = "${version}"
+displayName = "MCFX"
+authors = "Franckyi"
+description = '''
+A client-side GUI API inspired by TornadoFX
+'''
+logoFile = "assets/mcfx/icon.png"
+
+[[dependencies.mcfx]]
+modId = "forge"
+mandatory = true
+versionRange = "[40,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mcfx]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mcfx]]
+modId = "architectury"
+mandatory = true
+versionRange = "[4.4.59,)"
+ordering = "AFTER"
+side = "BOTH"

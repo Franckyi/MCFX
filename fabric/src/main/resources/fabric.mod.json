@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "mcfx",
+  "version": "${version}",
+  "name": "MCFX",
+  "description": "A client-side GUI API inspired by TornadoFX",
+  "authors": [
+    "Franckyi"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Franckyi/MCFX",
+    "sources": "https://github.com/Franckyi/MCFX",
+    "issues": "https://github.com/Franckyi/MCFX/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/mcfx/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.franckyi.mcfx.fabric.MCFXModFabric"
+    ]
+  },
+  "mixins": [
+    "mcfx.mixins.json",
+    "mcfx-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.18.2",
+    "architectury": ">=4.4.59"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/upWJQGd"
+      },
+      "badges": [
+        "library"
+      ]
+    }
+  }
+}

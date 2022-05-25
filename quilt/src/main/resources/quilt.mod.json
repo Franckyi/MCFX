@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "mixin": [
+    "mcfx.mixins.json",
+    "mcfx-common.mixins.json"
+  ],
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "mcfx",
+    "version": "${version}",
+    "name": "MCFX",
+    "description": "A client-side GUI API inspired by TornadoFX",
+    "authors": [
+      "Franckyi"
+    ],
+    "contact": {
+      "sources": "https://github.com/Franckyi/MCFX"
+    },
+    "license": "MIT",
+    "icon": "assets/mcfx/icon.png",
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "environment": "*",
+    "entrypoints": {
+      "init": [
+        "dev.franckyi.mcfx.quilt.MCFXModQuilt"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.18.2"
+      },
+      {
+        "id": "architectury",
+        "version": ">=4.4.59"
+      }
+    ]
+  }
+}
