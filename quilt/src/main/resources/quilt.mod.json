@@ -19,9 +19,9 @@
     "license": "MIT",
     "icon": "assets/mcfx/icon.png",
     "intermediate_mappings": "net.fabricmc:intermediary",
-    "environment": "*",
+    "environment": "CLIENT",
     "entrypoints": {
-      "init": [
+      "client": [
         {
           "adapter": "kotlin",
           "value": "dev.franckyi.mcfx.quilt.MCFXModQuilt"

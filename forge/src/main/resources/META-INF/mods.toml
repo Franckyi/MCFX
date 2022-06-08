@@ -8,28 +8,28 @@ modId = "mcfx"
 version = "${version}"
 displayName = "MCFX"
 authors = "Franckyi"
-description = '''
-A client-side GUI API inspired by TornadoFX
-'''
+description = "A client-side GUI API inspired by TornadoFX"
 logoFile = "icon.png"
+displayURL = "https://github.com/Franckyi/MCFX"
+#updateJSONURL=""
 
 [[dependencies.mcfx]]
 modId = "forge"
 mandatory = true
 versionRange = "[40,)"
 ordering = "NONE"
-side = "BOTH"
+side = "CLIENT"
 
 [[dependencies.mcfx]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.18.2,)"
 ordering = "NONE"
-side = "BOTH"
+side = "CLIENT"
 
 [[dependencies.mcfx]]
 modId = "architectury"
 mandatory = true
 versionRange = "[4.4.59,)"
 ordering = "AFTER"
-side = "BOTH"
+side = "CLIENT"
